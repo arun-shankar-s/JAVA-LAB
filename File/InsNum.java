@@ -16,12 +16,10 @@ public class InsNum {
 	                if (input.equalsIgnoreCase("exit")) {
 	                    break;
 	                }
-	                try {
+	                
 	                    int number = Integer.parseInt(input);
 	                    f0.write(number + "\n");
-	                } catch (NumberFormatException e) {
-	                    System.out.println("Invalid input. Please enter an integer or 'exit' to finish.");
-	                }	            }
+	             }
 	            f0.close();
 	            sc.close();
 	            System.out.println("Numbers written to the file successfully.");
